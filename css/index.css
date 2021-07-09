@@ -1,0 +1,136 @@
+body,
+html {
+  height: 100%;
+}
+main {
+  padding-top: 70px;
+}
+
+/*ヘッダー*/
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+
+}
+
+header h1 {
+  display: inline-block;
+  display: flex;
+  height: 50%;
+  padding: 0 0 0 20px;
+  font-size: 25px;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 16px;
+  list-style: none;
+  font-weight: bold;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*ファーストビュー*/
+
+.first__view {
+  height: 600px;
+  background: url("../img/mv.png")no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first__view-content h2 {
+  font-size: 50px;
+  color: #FFF;
+}
+.first__view-content p {
+  color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* メッセージ*/
+.message {
+  height: 300px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message__text {
+  width: 75%;
+}
+.message__text h2,
+.message__text p {
+  color: #FFF;
+}
+.message__text h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.message__text p {
+  line-height: 25px;
+}
+
+/*サービスボックス*/
+.service h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10%;
+}
+.service__box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10%;
+  justify-content: center;
+}
+
+.service__box-content {
+  width: 45%;
+  margin: 0 10px 20px 10px;
+}
+.service__box-content-img {
+  width: 100%;
+  height: 80%;
+  
+}
+.service__box-content-img img {
+  width: 100%;
+  height: 100%;
+}
+.service__box-content h3 {
+  margin: 10px 0;
+}
+.service a {
+  display: block;
+  width: 20%;
+  height: 30px;
+  background-color:#dc143c;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+
