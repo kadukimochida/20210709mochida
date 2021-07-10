@@ -58,6 +58,8 @@ header h1 a {
 .first__view-content h2 {
   font-size: 50px;
   color: #FFF;
+  text-align: center;
+  line-height: 70px;
 }
 .first__view-content p {
   color: #FFF;
@@ -65,6 +67,7 @@ header h1 a {
   font-weight: bold;
   font-size: 20px;
   padding-top: 20px;
+  line-height: 24px;
 }
 
 /* メッセージ*/
@@ -104,28 +107,7 @@ header h1 a {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .service__box-content {
-    width: 100%;
-  }
-  .service__box-content-img {
-    width: 100%;
-    height: 80%;
-  }
-}
-@media screen and (max-width:400px) {
-  .service__box {
-    width: 90%!important;
-    margin: 20px 5%!important;
-  }
-  .service__box-content {
-    width: 100%!important;
-    height: 200px!important;
-  }
-  .service__box-content-img {
-    height: 70%!important;
-  }
-}
+
 
 .service__box-content {
   width: 45%;
@@ -227,16 +209,19 @@ header h1 a {
 }
 .blog__box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px 10% 50px 10%;
 }
 
 .blog__box-content {
   width: 30%;
+  height: 300px;
+  margin: 0 5px;
 }
 .blog__box-img {
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 .blog__box-img img {
   width: 100%;
@@ -275,7 +260,6 @@ height: 100%;
   width: 50%;
   height: 200px;
   text-align: center;
-  position: relative;
 }
 
 .company-guide {
@@ -285,13 +269,11 @@ height: 100%;
 .company-guide a,
 .company-recruit a {
   display: inline-block;
-  position: absolute;
-  top: 45%;
-  left: 45%;
   text-decoration: none;
   color: #FFF;
   font-weight: bold;
   font-size: 20px;
+  padding-top: 90px;
 }
 
 .company-recruit {
@@ -316,6 +298,7 @@ height: 100%;
 }
 .contact-link p {
   margin-bottom: 30px;
+  text-align: center;
 }
 .contact-link a {
   display: block;
@@ -374,4 +357,86 @@ footer small {
 }
 .footer-nav ul li:last-of-type {
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .first__view-content {
+    width: 80%;
+  }
+  .service__box-content {
+    width: 100%;
+  }
+  .service__box-content-img {
+    width: 100%;
+    height: 80%;
+  }
+  .blog__box-content {
+    width: 100%;
+    height: 500px;
+  }
+  footer {
+    height: 250px;
+  }
+  .footer-content {
+    margin: 0 20%;
+  }
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav ul li {
+    border: none;
+    margin: 5px 0;
+    text-align: center;
+  }
+  small {
+    padding-top: 100px;
+  }
+
+}
+@media screen and (max-width:400px) {
+  .message {
+    height: 500px;
+  }
+  .message__text {
+    width: 90%;
+  }
+  .message__text h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .service__box {
+    width: 90%;
+    margin: 20px 5%;
+  }
+  .service__box-content {
+    width: 100%;
+    height: 300px;
+  }
+  .service__box-content-img {
+    height: 60%;
+  }
+  .service-link a {
+    width: 60%;
+  }
+  .news-title {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .news-content {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .blog__box-content {
+    width: 100%;
+    height: 300px;
+  }
+  .blog a {
+    width: 60%;
+  }
+  .contact-link {
+    width: 90%;
+    line-height: 24px;
+  }
+ 
 }

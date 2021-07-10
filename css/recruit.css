@@ -1,0 +1,142 @@
+body,
+html {
+  height: 100%;
+}
+main {
+  padding-top: 70px;
+}
+
+/*ヘッダー*/
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+
+}
+
+header h1 {
+  display: inline-block;
+  display: flex;
+  height: 50%;
+  padding: 0 0 0 20px;
+  font-size: 25px;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 16px;
+  list-style: none;
+  font-weight: bold;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*ファーストビュー*/
+
+.first__view {
+  height: 300px;
+  background: url("../img/mv.png")no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first__view-content h2 {
+  font-size: 30px;
+  color: #FFF;
+  text-align: center;
+  line-height: 70px;
+}
+
+/*コンタクト*/
+
+.contact {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8ff;
+  margin-top: 100px;
+}
+.contact-link h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contact-link p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact-link a {
+  display: block;
+  width: 50%;
+  height: 30px;
+  background-color:#dc143c;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+/*フッター*/
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+.footer-content {
+  width: 100%;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer small {
+  color: #FFF;
+  font-size: 80%;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+.footer-nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+  border-right: 1px solid #FFF;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 80%;
+}
+.footer-nav ul li:last-of-type {
+  border: none;
+}
