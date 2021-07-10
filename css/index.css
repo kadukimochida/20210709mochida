@@ -104,22 +104,52 @@ header h1 a {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .service__box-content {
+    width: 100%;
+  }
+  .service__box-content-img {
+    width: 100%;
+    height: 80%;
+  }
+}
+@media screen and (max-width:400px) {
+  .service__box {
+    width: 90%!important;
+    margin: 20px 5%!important;
+  }
+  .service__box-content {
+    width: 100%!important;
+    height: 200px!important;
+  }
+  .service__box-content-img {
+    height: 70%!important;
+  }
+}
+
 .service__box-content {
   width: 45%;
+  height: 400px;
   margin: 0 10px 20px 10px;
 }
+
 .service__box-content-img {
   width: 100%;
   height: 80%;
-  
 }
+
 .service__box-content-img img {
   width: 100%;
   height: 100%;
 }
+
 .service__box-content h3 {
   margin: 10px 0;
 }
+.service__box-content p {
+  line-height: 20px;
+}
+
 .service a {
   display: block;
   width: 20%;
@@ -133,4 +163,215 @@ header h1 a {
   margin: 0 auto;
 }
 
+/*ニュース*/
 
+.news {
+  width: 100%;
+  background-color: #000;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.news-title {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15% 10px 15%;
+}
+.news-title h2 {
+  font-size: 30px;
+  color: #FFF;
+}
+.news-title a {
+  width: 170px;
+  height: 30px;
+  display: inline-block;
+  color: #FFF;
+  background-color: #dc143c;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.news-content {
+  height: 300px;
+  width: 70%;
+  margin: 0 15% 30px 15%;
+}
+.news-content a {
+  display: block;
+  background-color: #FFF;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+  padding: 25px 0 25px 20px;
+}
+.news-content a:hover {
+  opacity: .8;
+}
+.news-content a span {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/*ブログ*/
+.blog {
+  width: 100%;
+  padding: 50px 0 50px 0;
+}
+.blog h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.blog__box {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10% 50px 10%;
+}
+
+.blog__box-content {
+  width: 30%;
+}
+.blog__box-img {
+  width: 100%;
+  height: 80%;
+}
+.blog__box-img img {
+  width: 100%;
+height: 100%;
+}
+.blog__box-content p:first-of-type {
+  padding: 10px 0 10px 0;
+}
+.blog__box-content p:last-of-type {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.blog a {
+  display: block;
+  width: 20%;
+  height: 30px;
+  background-color:#dc143c;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+/*カンパニー*/
+
+.company {
+  width: 100%;
+  display: flex;
+}
+
+.company-guide,
+.company-recruit {
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.company-guide {
+  background-color: #dc143c;
+}
+
+.company-guide a,
+.company-recruit a {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.company-recruit {
+  background-color: #000;
+}
+
+/*コンタクト*/
+
+.contact {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8ff;
+  margin-top: 100px;
+}
+.contact-link h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contact-link p {
+  margin-bottom: 30px;
+}
+.contact-link a {
+  display: block;
+  width: 50%;
+  height: 30px;
+  background-color:#dc143c;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+/*フッター*/
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+.footer-content {
+  width: 100%;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer small {
+  color: #FFF;
+  font-size: 80%;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+.footer-nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+  border-right: 1px solid #FFF;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 80%;
+}
+.footer-nav ul li:last-of-type {
+  border: none;
+}
