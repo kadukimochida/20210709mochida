@@ -30,20 +30,100 @@ header h1 {
   align-items: center;
 }
 
-header nav ul li {
+nav {
+  margin-right: 20px;
+}
+
+
+.header__nav ul li {
   display: inline-block;
-  padding-right: 30px;
+  width: 100px;
   font-size: 16px;
   list-style: none;
   font-weight: bold;
+  text-align: center;
 }
-header nav ul li a {
+.header__nav ul li a {
   text-decoration: none;
   color: #000;
 }
 header h1 a {
   text-decoration: none;
   color: #000;
+}
+
+/*ハンバーガー*/
+.hamburger {
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+  left: -100%;
+  transition: .7s;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.hamburger__list a {
+  text-decoration: none;
+  color: blue;
+}
+.hamburger ul {
+  padding-top: 80px;
+  margin-top: 400px;
+}
+
+.hamburger ul li {
+  list-style-type: none;
+  margin-top: 50px;
+}
+.menu {
+  display: none;
+  width: 36px;
+  height: 32px;
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
+
+.menu__line-top,
+.menu__line-middle,
+.menu__line-bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.menu__line-top {
+  top: 0;
+}
+
+.menu__line-middle {
+  top: 14px;
+}
+
+.menu__line-bottom {
+  bottom: 0;
+}
+
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+
+.in {
+  transform: translateX(100%);
 }
 
 /*ファーストビュー*/
@@ -169,4 +249,67 @@ footer small {
 }
 .footer-nav ul li:last-of-type {
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .first__view-content {
+    width: 80%;
+  }
+  .news-content {
+    width: 90%;
+    margin: 0 5%;
+  }
+  footer {
+    height: 250px;
+  }
+  .footer-content {
+    margin: 0 20%;
+  }
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav ul li {
+    border: none;
+    margin: 5px 0;
+    text-align: center;
+  }
+  small {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__nav {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .news-content {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .contact-link {
+    width: 90%;
+    line-height: 24px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-content small {
+    padding-top: 0;
+    text-align: center;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
 }

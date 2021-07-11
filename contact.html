@@ -8,13 +8,12 @@
   <title>株式会社TECH</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/contact.css">
-
 </head>
 
 <body>
   <header>
     <h1><a href="#">TECH</a></h1>
-    <nav>
+    <nav class="header__nav">
       <ul>
         <li><a href="index.html">ホーム</a></li>
         <li><a href="service.html">事業内容</a></li>
@@ -25,6 +24,22 @@
         <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
+    <nav class="hamburger" id="nav">
+      <ul>
+        <li class="hamburger__list"><a href="index.html">ホーム</a></li>
+        <li class="hamburger__list"><a href="service.html">事業内容</a></li>
+        <li class="hamburger__list"><a href="news.html">ニュース</a></li>
+        <li class="hamburger__list"><a href="blog.html">社員ブログ</a></li>
+        <li class="hamburger__list"><a href="company.html">会社概要</a></li>
+        <li class="hamburger__list"><a href="recruit.html">採用情報</a></li>
+        <li class="hamburger__list"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="menu" id="menu">
+      <span class="menu__line-top"></span>
+      <span class="menu__line-middle"></span>
+      <span class="menu__line-bottom"></span>
+    </div>
   </header>
   <main>
     <div class="first__view">
@@ -32,12 +47,26 @@
         <h2>お問い合わせ</h2>
       </div>
     </div>
-    <div class="contact">
-      <div class="contact-link">
-        <h2>お問い合わせ</h2>
-        <p>お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
-        <a href="contact.html">お問い合わせ</a>
-      </div>
+    <div class="form">
+      <form action="" method="POST">
+        <div class="form-content">
+          <p>会社名</p>
+          <input type="text" name="company-name" value="">
+        </div>
+        <div class="form-content">
+          <p>お名前 <span>*</span></p>
+          <input type="text" name="name" value="">
+        </div>
+        <div class="form-content">
+          <p>メールアドレス <span>*</span></p>
+          <input type="email" name="email" value="">
+        </div>
+        <div class="form-content">
+          <p>お問い合わせ内容 <span>*</span></p>
+          <textarea neme="textarea" cols="100" rows="10"></textarea>
+        </div>
+        <input  class="form-btn" type="submit" name="btn" value="お申し込み">
+      </form>
     </div>
   </main>
   <footer>
