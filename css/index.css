@@ -14,25 +14,26 @@ header {
   background-color: #FFF;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0%;
   left: 0%;
-
+  padding-top: px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 header h1 {
   display: inline-block;
   display: flex;
-  height: 50%;
+  height: 100%;
   padding: 0 0 0 20px;
   font-size: 25px;
   align-items: center;
 }
 
-nav {
-  margin-right: 20px;
-}
 
 
 .header__nav ul li {
@@ -69,7 +70,6 @@ header h1 a {
 }
 .hamburger ul {
   padding-top: 80px;
-  margin-top: 400px;
 }
 
 .hamburger ul li {
@@ -82,7 +82,7 @@ header h1 a {
   height: 32px;
   position: relative;
   right: 20px;
-  top: 5px;
+  top: 20px;
 }
 
 .menu__line-top,
@@ -125,6 +125,7 @@ header h1 a {
 .in {
   transform: translateX(100%);
 }
+
 /*ファーストビュー*/
 
 .first__view {
